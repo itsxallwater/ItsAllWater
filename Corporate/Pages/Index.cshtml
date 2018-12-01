@@ -1,0 +1,70 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="tab-content">
+    <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
+        <h3 class="display-4">Our Story</h3>
+        <p class="lead">
+            Hello! My name is Mike Wright and this is It's All Water, LLC. We're a one-man shop offering freelance software development based out of Phoenix, AZ. You are probably thinking "that's a strange name for a software development company" and you're not wrong!
+            Inspiration for the name comes from one of my favorite sayings, "it's all water under the bridge". When I was registering this LLC in 2015, it felt like a natural (and unique) name. Alas, that does mean we do not offer any services related to H2O. At least not yet!
+        </p>
+        <p class="lead">
+            Professionally, I spent the first thirteen years of my career (re: my whole career) at a timeshare servicing company based in Scottsdale. Timeshare is a funny business and I always told people "we don't sell them!" but regardless, it was not an industry I ever saw
+            myself getting involved in, certainly not as a young developer. Even though I no longer work there, I'm extremely appreciative of the opportunities that were provided to me. My experience there allowed me to grow as a developer across several technology stacks:
+        </p>
+        <ol class="lead">
+            <li>PickBASIC (D3 and jBASE)</li>
+            <li>ColdFusion</li>
+            <li>Microsoft SQL (T-SQL, SSRS and SSIS)</li>
+            <li>ASP.NET (WebForms)</li>
+            <li>C#</li>
+        </ol>
+        <p class="lead">
+            Not only did I gain valuable technology experience, I also became familiar with Office 365 for Enterprise, Microsoft Azure, PCI DSS Compliance (Level 1), HIPAA Compliance and SSAE-18 audits. Due to the fact it was a smaller company,
+            I was able to chart my own course and take a strong sense of ownership and pride in my work. Not to mention, I established great friendships with many individuals that will never fade away. That time has led me to the present, where I'm excited to bring those skills to
+            help out anyone in need!
+        </p>
+        <p class="lead">
+            Outside of providing freelance software development, I'm a husband to an amazing woman and father to an equally amazing son (he's @Model.ZaneAge old!). I'm also a huge sports fan, supporting all of the local professional teams plus Arizona State. When I'm not
+            hanging with the family or watching games, you're likely to find me coding, running, cycling or enjoying the great culinary and brewery scenes of Phoenix!
+        </p>
+    </div>
+    <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
+        <h3 class="display-4">Our Work</h3>
+        <p class="lead">
+            Since most of my career was spent at a private company, I can't show off much here. If you'd like to read more about my accomplishments there please take a look at my <a href="~/resume.html" alt="Resume">resume</a>.
+        </p>
+        <p class="lead">
+            That said, now that I have moved on to the next chapter of my career I have taken advantage of opportunities to tinker. The first site I would like to showcase is <a href="https://www.donovanvsdevin.com" alt="Donovan vs. Devin">Donovan vs. Devin</a>.
+            This site scrapes the Hollinger PER (player efficiency rating) from ESPN (cached once daily) for Donovan Mitchell and Devin Booker. The player with the highest PER has their ribbon highlighted. You might be asking yourself "why create this?" and truthfully,
+            the answer is three-fold:
+        </p>
+        <ol class="lead">
+            <li>First and foremost, it started with a group chat debate (and I'm known for my group chat Photoshops and other trolls).</li>
+            <li>Second, I figured it a good opportunity to venture into the world of .NET Core.</li>
+            <li>Last but not least, this is a big debate in NBA circles (especially amongst the Utah Jazz and Phoenix Suns fanbases) so I'd be lying if I said I wasn't hopeful for it to reach a broader audience!</li>
+        </ol>
+        <p class="lead">You can also find me across the internet at all of these fantastic places:</p>
+        <ol class="lead list-unstyled">
+            <li><a href="https://www.linkedin.com/in/michaelscottwright/" target="_blank" rel="noopener" alt="LinkedIn michaelscottwright"><i class="fab fa-linkedin-in"></i>michaelscottwright</a></li>
+            <li><a href="https://www.hackerrank.com/mike_wright" target="_blank" rel="noopener" alt="HackerRank mike_wright"><i class="fab fa-hackerrank"></i>mike_wright</a></li>
+            <li><a href="https://github.com/itsxallwater" target="_blank" rel="noopener" alt="GitHub itsxallwater"><i class="fab fa-github-alt"></i>itsxallwater</a></li>
+            <li><a href="https://stackoverflow.com/story/mikewright" target="_blank" rel="noopener" alt="StackOverflow mikewright"><i class="fab fa-stack-overflow"></i>mikewright</a></li>
+            <li><a href="https://angel.co/mike-wright-15" target="_blank" rel="noopener" alt="Angel.co mike-wright-15"><i class="fab fa-angellist"></i>mike-wright-15</a></li>
+        </ol>
+    </div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        <h3 class="display-4">Let's Talk!</h3>
+        <p class="lead">
+            In general, I live my life guided by two major principles. The first? No one is responsible for your happiness more than you. The second? Conversations are free (okay, <i>mostly</i> free&mdash;but in this case, definitely free!). If you would like to chat, you can reach me via email
+            or Twitter!
+        </p>
+        <ul class="list-unstyled">
+            <li><a href="mailto:mike.wright@itsallwater.net" alt="Email mikewright@itsallwater.net"><i class="fab fa-google"></i>mike.wright@itsallwater.net</a></li>
+            <li><a href="https://twitter.com/MikeMcMikaelson" target="_blank" rel="noopener" alt="Twitter @@MikeMcMikaelson"><i class="fab fa-twitter"></i>@@MikeMcMikaelson</a></li>
+        </ul>
+    </div>
+</div>
