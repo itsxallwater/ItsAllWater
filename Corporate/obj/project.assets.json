@@ -13138,19 +13138,19 @@
   },
   "packageFolders": {
     "C:\\Users\\under\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\PF\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Source\\Its All Water\\Corporate\\Corporate.csproj",
+      "projectUniqueName": "C:\\Source\\Personal\\Its All Water\\Corporate\\Corporate.csproj",
       "projectName": "Corporate",
-      "projectPath": "C:\\Source\\Its All Water\\Corporate\\Corporate.csproj",
+      "projectPath": "C:\\Source\\Personal\\Its All Water\\Corporate\\Corporate.csproj",
       "packagesPath": "C:\\Users\\under\\.nuget\\packages\\",
-      "outputPath": "C:\\Source\\Its All Water\\Corporate\\obj\\",
+      "outputPath": "C:\\Source\\Personal\\Its All Water\\Corporate\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\PF\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\under\\AppData\\Roaming\\NuGet\\NuGet.Config",

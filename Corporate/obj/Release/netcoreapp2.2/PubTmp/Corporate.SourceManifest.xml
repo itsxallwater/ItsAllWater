@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="C:\TFS\Its All Water\Main\Corporate\obj\Release\netcoreapp2.2\PubTmp\Out\" />
+  <IisApp path="C:\Source\Personal\Its All Water\Corporate\obj\Release\netcoreapp2.2\PubTmp\Out\" />
 </sitemanifest>

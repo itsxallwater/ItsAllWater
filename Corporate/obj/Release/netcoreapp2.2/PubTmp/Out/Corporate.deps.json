@@ -3579,49 +3579,49 @@
     "BuildBundlerMinifier/2.8.391": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JvnXAF6e55QKR9t+UcG/kVcWap22fHeKjkUcrJwl2N3vF/NpohuvZlBceqYF9S8aL8xOx6h+PX2plnymc23kiQ==",
+      "sha512": "sha512-+EJJ0URQVxRfk3jdmB9/WpFH3Q50tiA1paccMBlmbibPdQ8tuoeXLXDmnUGn9n5W5MM1Nu1CtSTiefiaWbGbqw==",
       "path": "buildbundlerminifier/2.8.391",
       "hashPath": "buildbundlerminifier.2.8.391.nupkg.sha512"
     },
     "Microsoft.ApplicationInsights/2.8.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-39k9QFItF5rALCsyCYT9FWZc1XI71qQ10z3mSEEx09/CzohkJHam/V3hG8SV4NV9DfYP8GR6OCErJXRf8vEMUg==",
+      "sha512": "sha512-p8n64aouzVF06zEyKKOYOB5sbVJd+GFs1A9ykLEVP9XNHTcmAvHbVgtLpUoHuvoWShYOkGW2ato/lIKiUsxIUw==",
       "path": "microsoft.applicationinsights/2.8.1",
       "hashPath": "microsoft.applicationinsights.2.8.1.nupkg.sha512"
     },
     "Microsoft.ApplicationInsights.AspNetCore/2.5.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-uEPofuo3OBNRuwJEJGm/yihtlK7ymvlAqmyGrKAcbWwYYrGgNjMyx8zfGWtkBUCV2cZlZITNqeN2AIVeiNVVtg==",
+      "sha512": "sha512-gI0+JsIYZUy/FLhtxjrrsVxzsWw65mN3A7WhbBTavm2id9cyIQfPIjU0UuwK1m2e1oX/cA9XSRXcEib0PRVn5Q==",
       "path": "microsoft.applicationinsights.aspnetcore/2.5.1",
       "hashPath": "microsoft.applicationinsights.aspnetcore.2.5.1.nupkg.sha512"
     },
     "Microsoft.ApplicationInsights.DependencyCollector/2.8.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4DCNjlolFQyIjaGK6Z52kIDcsZIXIB43+XqqNrq4MurBuK2S1GwiZ3VqwgzDC94sTlIq6wdwnFLzEBY0ZNRsxg==",
+      "sha512": "sha512-/AZSOW3nyh5vQ6vVYmh7t/NNkKLNym0rTz5BsVOU0/bcROkky/xjKvBFFwz2dIl3k5lwyMrttN3IFd1mvpaT7A==",
       "path": "microsoft.applicationinsights.dependencycollector/2.8.1",
       "hashPath": "microsoft.applicationinsights.dependencycollector.2.8.1.nupkg.sha512"
     },
     "Microsoft.ApplicationInsights.PerfCounterCollector/2.8.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-63s3ZRb59ZHU4UsolDDvweZj2KKGt6ddB511zDez29F6USJhq0sYZi2/v5KIpKB+9nLPZd1J2YMp0qEpheyqYQ==",
+      "sha512": "sha512-WbRAcwlcBR8MflNqNUj83PB2rDI3beqemrp5xqzsPDSyqVlkzciyP3pF3lpSCGppOLvHZnNW5gH6rPXzF3qRvA==",
       "path": "microsoft.applicationinsights.perfcountercollector/2.8.1",
       "hashPath": "microsoft.applicationinsights.perfcountercollector.2.8.1.nupkg.sha512"
     },
     "Microsoft.ApplicationInsights.WindowsServer/2.8.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-STaMIg0XLPnEeTbtKWn3ZV3i+Gc+BEE/t+MJ+1ReQ2jZm/iJsJJlniZFHHtdRbpTm31VYimrjBffhusOA5mC0w==",
+      "sha512": "sha512-d19OqHMALGg1EHveYBdCqMvphZBb7y6HuqsDOz6qRSUfZPDC/Q+YYkOUBF9CVlSf0+plA7TC19eReO0jBnwPHQ==",
       "path": "microsoft.applicationinsights.windowsserver/2.8.1",
       "hashPath": "microsoft.applicationinsights.windowsserver.2.8.1.nupkg.sha512"
     },
     "Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel/2.8.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-k0qouxglAdnQMCzElWrsRFygFprOPt+FSEfKRtKSN265VAZ5ltI4awzvNHOdcyRyPA6iCnoHxQM+0cNyUTU7aA==",
+      "sha512": "sha512-k3VO89cDCk1An9i6wiChwmPLoG/wWYrvb08xFKFVulxGkSF9uT4tscmPx7yalg3Rocfw+nSpUpovTcNrmWKGOA==",
       "path": "microsoft.applicationinsights.windowsserver.telemetrychannel/2.8.1",
       "hashPath": "microsoft.applicationinsights.windowsserver.telemetrychannel.2.8.1.nupkg.sha512"
     },
@@ -3698,7 +3698,7 @@
     "System.IO.FileSystem.AccessControl/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-crjUsNiUm4n6uwPC4K6ya43tu6+pDo8CPQRj/mkVzsAYKLeP26PhhkJuUFSP0TYW1wEe8ZajPi7Mw+WPm3AmfQ==",
+      "sha512": "sha512-H5erzyCbyu2tznCiX8OQzTCLDFCP2Gij2SZkn0YyWvLKQMppL+a9i5ehYjlPu84J8lTJpmv/vAtuOldOoDZ1Ow==",
       "path": "system.io.filesystem.accesscontrol/4.3.0",
       "hashPath": "system.io.filesystem.accesscontrol.4.3.0.nupkg.sha512"
     },
@@ -3712,14 +3712,14 @@
     "System.Net.NetworkInformation/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zNVmWVry0pAu7lcrRBhwwU96WUdbsrGL3azyzsbXmVNptae1+Za+UgOe9Z6s8iaWhPn7/l4wQqhC56HZWq7tkg==",
+      "sha512": "sha512-MKLDZXuBZOS348egaxkMgwSUHIIhykVf0pudpfSdzjKmkRpVCzqkpysPHHp8HfckYAhuXRM+UgxWPgFTHF8Trg==",
       "path": "system.net.networkinformation/4.3.0",
       "hashPath": "system.net.networkinformation.4.3.0.nupkg.sha512"
     },
     "System.Net.Requests/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OZNUuAs0kDXUzm7U5NZ1ojVta5YFZmgT2yxBqsQ7Eseq5Ahz88LInGRuNLJ/NP2F8W1q7tse1pKDthj3reF5QA==",
+      "sha512": "sha512-kLtBoQKr64ek1T7qcjFgNL9+d4TQbtP8kOY7sUOjBxJDbIrCzzBf3Y1itktzMYpGwa1+IE26QqAVHdiwBdcdog==",
       "path": "system.net.requests/4.3.0",
       "hashPath": "system.net.requests.4.3.0.nupkg.sha512"
     },
@@ -3733,7 +3733,7 @@
     "System.Net.WebHeaderCollection/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-XZrXYG3c7QV/GpWeoaRC02rM6LH2JJetfVYskf35wdC/w2fFDFMphec4gmVH2dkll6abtW14u9Rt96pxd9YH2A==",
+      "sha512": "sha512-Ss4a5WoNcqnEzZBac/l4FeNtF7GupFjaC1MWaN76oz6GipsBE+rBaerD4TM1MD8kuWu5UdM34v7uDibmbiWhPw==",
       "path": "system.net.webheadercollection/4.3.0",
       "hashPath": "system.net.webheadercollection.4.3.0.nupkg.sha512"
     },
