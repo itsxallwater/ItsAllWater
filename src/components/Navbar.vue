@@ -1,7 +1,7 @@
 <template>
   <nav
     id="header"
-    class="w-full z-30 top-0 text-gray-700"
+    class="lg:fixed w-full z-30 top-0 text-gray-700"
     :class="scrollPosition > 0 || showMenu ? 'bg-white shadow fixed' : ''"
   >
     <div
@@ -22,7 +22,7 @@
         </span>
       </div>
 
-      <div class="block pr-4" :class="scrollPosition === 0 ? 'lg:hidden' : ''">
+      <div class="pr-4 lg:hidden">
         <button
           class="flex items-center p-1 hover:text-blue-400"
           @click="this.toggleMenu()"
