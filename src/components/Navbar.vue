@@ -1,8 +1,8 @@
 <template>
   <nav
     id="header"
-    class="fixed w-full z-30 top-0 text-gray-700"
-    :class="scrollPosition > 0 ? 'bg-white shadow' : ''"
+    class="w-full z-30 top-0 text-gray-700"
+    :class="scrollPosition > 0 ? 'bg-white shadow fixed' : ''"
   >
     <div
       class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
@@ -22,7 +22,10 @@
         </span>
       </div>
 
-      <div class="block lg:hidden pr-4">
+      <div
+        class="block lg:hidden pr-4"
+        :class="scrollPosition === 0 ? 'hidden' : ''"
+      >
         <button
           class="flex items-center p-1 hover:text-blue-400"
           @click="this.toggleMenu()"
