@@ -2,7 +2,7 @@
   <div>
     <!--Hero-->
     <div
-      class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center"
+      class="container px-3 mb-16 mx-auto flex flex-wrap flex-col md:flex-row items-center"
     >
       <!--Left Col-->
       <div
@@ -742,7 +742,7 @@ import TransitionTop from "../components/TransitionTop.vue";
 export default {
   name: "Home",
   components: {
-    TransitionTop,
-  },
+    TransitionTop
+  }
 };
 </script>
