@@ -1,24 +1,27 @@
 <template>
   <nav
     id="header"
-    class="fixed w-full z-30 top-0 text-gray-700"
-    :class="scrollPosition > 0 ? 'bg-white shadow' : ''"
+    class="lg:fixed w-full z-30 top-0 text-gray-700"
+    :class="scrollPosition > 0 || showMenu ? 'bg-white shadow fixed' : ''"
   >
     <div
       class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
     >
-      <div class="pl-4 flex items-center">
+      <div
+        class="pl-4 flex items-center"
+        :class="scrollPosition === 0 ? 'lg:hidden' : 'block'"
+      >
         <img
           alt="It's All Water, LLC logo"
           src="../assets/logo-bare.png"
-          style="display: inline-block; height: 2.2rem; margin-right: 0.8rem;"
+          style="height: 2.2rem; margin-right: 0.8rem;"
         />
         <span class="text-1xl lg:text-2xl">
           It's All Water
         </span>
       </div>
 
-      <div class="block lg:hidden pr-4">
+      <div class="pr-4 lg:hidden">
         <button
           class="flex items-center p-1 hover:text-blue-400"
           @click="this.toggleMenu()"
@@ -46,8 +49,33 @@
               >Home
             </router-link>
           </li>
+          <li class="mr-3">
+            <router-link
+              to="about"
+              class="inline-block no-underline hover:text-blue-400 py-2 px-4"
+            >
+              About
+            </router-link>
+          </li>
+          <li class="mr-3">
+            <router-link
+              to="portfolio"
+              class="inline-block no-underline hover:text-blue-400 py-2 px-4"
+            >
+              Portfolio
+            </router-link>
+          </li>
+          <li class="mr-3" v-if="showMenu">
+            <router-link
+              to="contact"
+              class="inline-block no-underline hover:text-blue-400 py-2 px-4"
+            >
+              Contact
+            </router-link>
+          </li>
         </ul>
         <router-link
+          v-if="!showMenu"
           to="contact"
           class="mx-auto lg:mx-0 bg-white font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75"
         >
