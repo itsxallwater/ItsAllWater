@@ -7,11 +7,15 @@
     <div
       class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
     >
-      <div class="pl-4 flex items-center">
+      <div
+        class="pl-4 flex items-center"
+        :class="scrollPosition === 0 ? 'hidden' : ''"
+      >
         <img
           alt="It's All Water, LLC logo"
           src="../assets/logo-bare.png"
-          style="display: inline-block; height: 2.2rem; margin-right: 0.8rem;"
+          class="block"
+          style="height: 2.2rem; margin-right: 0.8rem;"
         />
         <span class="text-1xl lg:text-2xl">
           It's All Water
