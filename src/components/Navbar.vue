@@ -9,12 +9,11 @@
     >
       <div
         class="pl-4 flex items-center"
-        :class="scrollPosition === 0 ? 'lg:hidden' : ''"
+        :class="scrollPosition === 0 ? 'lg:hidden' : 'block'"
       >
         <img
           alt="It's All Water, LLC logo"
           src="../assets/logo-bare.png"
-          class="block"
           style="height: 2.2rem; margin-right: 0.8rem;"
         />
         <span class="text-1xl lg:text-2xl">
