@@ -46,6 +46,22 @@
               >Home
             </router-link>
           </li>
+          <li class="mr-3">
+            <router-link
+              to="about"
+              class="inline-block no-underline hover:text-blue-400 py-2 px-4"
+            >
+              About
+            </router-link>
+          </li>
+          <li class="mr-3">
+            <router-link
+              to="portfolio"
+              class="inline-block no-underline hover:text-blue-400 py-2 px-4"
+            >
+              Portfolio
+            </router-link>
+          </li>
         </ul>
         <router-link
           to="contact"
