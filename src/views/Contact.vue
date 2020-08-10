@@ -1,13 +1,11 @@
 <template>
-  <div class="mt-24">
+  <div class="lg:mt-24">
     <!--Hero-->
     <div
-      class="container px-3 mb-48 mx-auto flex flex-wrap flex-col md:flex-row items-center"
+      class="container px-3 mb-12 lg:mb-48 mx-auto flex flex-wrap flex-col md:flex-row items-center"
     >
       <!--Left Col-->
-      <div
-        class="flex flex-col w-full md:w-2/5 justify-center items-start text-left"
-      >
+      <div class="w-full md:w-3/5 py-6">
         <h1 class="my-4 text-5xl font-bold leading-tight">
           Let's Talk
         </h1>
@@ -38,7 +36,9 @@
         </ul>
       </div>
       <!--Right Col-->
-      <div class="w-full md:w-3/5 py-6">
+      <div
+        class="flex flex-col w-full md:w-2/5 justify-center items-start text-left"
+      >
         <form
           action="https://formspree.io/mike.wright@itsallwater.net"
           method="POST"
@@ -97,7 +97,7 @@ import TransitionTop from "../components/TransitionTop.vue";
 export default {
   name: "Home",
   components: {
-    TransitionTop,
-  },
+    TransitionTop
+  }
 };
 </script>

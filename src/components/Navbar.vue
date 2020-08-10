@@ -65,6 +65,15 @@
               Portfolio
             </router-link>
           </li>
+          <li class="mr-3">
+            <a
+              href="https://www.mwright.dev/"
+              class="inline-block no-underline hover:text-blue-400 py-2 px-4"
+              target="_blank"
+              rel="noopener"
+              >Blog</a
+            >
+          </li>
           <li class="mr-3" v-if="showMenu">
             <router-link
               to="contact"
