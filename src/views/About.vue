@@ -25,7 +25,7 @@
       </div>
     </div>
     <TransitionTop />
-    <div class="py-12 bg-white leading-normal text-2xl">
+    <div class="p-3 mx-auto bg-white leading-normal text-2xl">
       <p class="mb-6">
         Professionally, I have been at
         <a
@@ -812,7 +812,7 @@ import TransitionTop from "../components/TransitionTop.vue";
 export default {
   name: "About",
   components: {
-    TransitionTop
-  }
+    TransitionTop,
+  },
 };
 </script>
