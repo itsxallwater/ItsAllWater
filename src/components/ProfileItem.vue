@@ -1,6 +1,9 @@
 <template>
   <a :href="item.url" target="_blank" rel="noopener" :alt="item.alt">
-    <i :class="item.icon" /><span class="md:hidden pl-2">{{ item.alt }}</span>
+    <i :class="item.icon" /><span
+      :class="hideAlt ? 'md:hidden pl-2' : 'ml-2'"
+      >{{ item.alt }}</span
+    >
   </a>
 </template>
 
@@ -12,6 +15,7 @@ export default {
       icon: String,
       alt: String,
     },
+    hideAlt: Boolean,
   },
   setup(props) {},
 };
