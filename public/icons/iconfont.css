@@ -32,83 +32,91 @@ content: "\e002";
 content: "\e003";
 }
 
-.i.icomoon-free\:profile:before {
+.i.ic\:baseline-email:before {
 content: "\e004";
 }
 
-.i.mdi\:basketball-hoop-outline:before {
+.i.icomoon-free\:profile:before {
 content: "\e005";
 }
 
-.i.mdi\:language-csharp:before {
+.i.mdi\:basketball-hoop-outline:before {
 content: "\e006";
 }
 
-.i.si-glyph\:database:before {
+.i.mdi\:language-csharp:before {
 content: "\e007";
 }
 
-.i.simple-icons\:angellist:before {
+.i.si-glyph\:database:before {
 content: "\e008";
 }
 
-.i.simple-icons\:azurefunctions:before {
+.i.simple-icons\:angellist:before {
 content: "\e009";
 }
 
-.i.simple-icons\:docker:before {
+.i.simple-icons\:azurefunctions:before {
 content: "\e00a";
 }
 
-.i.simple-icons\:dot-net:before {
+.i.simple-icons\:docker:before {
 content: "\e00b";
 }
 
-.i.simple-icons\:git:before {
+.i.simple-icons\:dot-net:before {
 content: "\e00c";
 }
 
-.i.simple-icons\:github:before {
+.i.simple-icons\:git:before {
 content: "\e00d";
 }
 
-.i.simple-icons\:hackerrank:before {
+.i.simple-icons\:github:before {
 content: "\e00e";
 }
 
-.i.simple-icons\:java:before {
+.i.simple-icons\:hackerrank:before {
 content: "\e00f";
 }
 
-.i.simple-icons\:javascript:before {
+.i.simple-icons\:java:before {
 content: "\e010";
 }
 
-.i.simple-icons\:linkedin:before {
+.i.simple-icons\:javascript:before {
 content: "\e011";
 }
 
-.i.simple-icons\:microsoftazure:before {
+.i.simple-icons\:linkedin:before {
 content: "\e012";
 }
 
-.i.simple-icons\:mongodb:before {
+.i.simple-icons\:microsoftazure:before {
 content: "\e013";
 }
 
-.i.simple-icons\:pluralsight:before {
+.i.simple-icons\:mongodb:before {
 content: "\e014";
 }
 
-.i.simple-icons\:stackoverflow:before {
+.i.simple-icons\:pluralsight:before {
 content: "\e015";
 }
 
-.i.simple-icons\:typescript:before {
+.i.simple-icons\:stackoverflow:before {
 content: "\e016";
 }
 
-.i.simple-icons\:visualstudiocode:before {
+.i.simple-icons\:twitter:before {
 content: "\e017";
+}
+
+.i.simple-icons\:typescript:before {
+content: "\e018";
+}
+
+.i.simple-icons\:visualstudiocode:before {
+content: "\e019";
 }
 

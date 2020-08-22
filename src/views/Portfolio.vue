@@ -23,7 +23,7 @@
         </h1>
         <div class="flex flex-wrap mb-4 leading-normal text-xl md:text-3xl">
           <div class="w-full md:w-1/3 md:h-12" v-for="item in items">
-            <ProfileItem :item="item" :hideAlt="true" />
+            <IconLink :item="item" :hideAlt="true" />
           </div>
         </div>
         <span class="md:text-sm italic"
@@ -40,12 +40,12 @@
 
 <script>
 import TransitionTop from "../components/TransitionTop.vue";
-import ProfileItem from "../components/ProfileItem.vue";
+import IconLink from "../components/IconLink.vue";
 
 export default {
   name: "Portfolio",
   components: {
-    ProfileItem,
+    IconLink,
     TransitionTop,
   },
   data() {

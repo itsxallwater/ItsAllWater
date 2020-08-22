@@ -65,7 +65,7 @@
         class="flex flex-wrap mb-4 leading-normal text-sm lg:text-base text-left lg:text-center"
       >
         <div class="w-full md:w-1/6 md:h-12" v-for="item in currentItems">
-          <ProfileItem :item="item" :hideAlt="false" />
+          <IconLink :item="item" :hideAlt="false" />
         </div>
       </div>
       <h2
@@ -92,7 +92,7 @@
         class="flex flex-wrap mb-4 leading-normal text-sm lg:text-base text-left lg:text-center"
       >
         <div class="w-full md:w-1/6 md:h-12" v-for="item in historyItems">
-          <ProfileItem :item="item" :hideAlt="false" />
+          <IconLink :item="item" :hideAlt="false" />
         </div>
       </div>
       <p class="mb-4 text-sm lg:text-base">
@@ -134,13 +134,13 @@
 
 <script>
 import TransitionTop from "../components/TransitionTop.vue";
-import ProfileItem from "../components/ProfileItem.vue";
+import IconLink from "../components/IconLink.vue";
 
 export default {
   name: "About",
   components: {
     TransitionTop,
-    ProfileItem,
+    IconLink,
   },
   data() {
     return {
