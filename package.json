@@ -1,6 +1,13 @@
 {
   "name": "its-all-water-corporate",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": "Mike Wright",
+  "description": "It's All Water, LLC Corporate Website",
+  "homepage": "https://www.itsallwater.net",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itsxallwater/ItsAllWater"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build"
