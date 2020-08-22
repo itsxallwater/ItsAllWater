@@ -6,7 +6,11 @@
     >
       <!--Left Col-->
       <div class="w-full md:w-3/5 items-center">
-        <img class="lg:w-4/5 w-3/5 m-auto z-50" src="../assets/logo.png" />
+        <img
+          alt="It's All Water, LLC logo"
+          class="lg:w-4/5 w-3/5 m-auto z-50"
+          src="../assets/logo.png"
+        />
       </div>
       <!--Right Col-->
       <div
@@ -114,7 +118,7 @@
           >mwright.dev</a
         >.
       </p>
-      <span class="md:text-sm italic"
+      <span class="text-sm italic"
         >Icons thanks to
         <a
           href="https://icones.netlify.app/"

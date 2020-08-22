@@ -6,7 +6,11 @@
     >
       <!--Left Col-->
       <div class="w-full md:w-3/5 items-center">
-        <img class="lg:w-4/5 w-3/5 m-auto z-50" src="../assets/logo.png" />
+        <img
+          alt="It's All Water, LLC logo"
+          class="lg:w-4/5 w-3/5 m-auto z-50"
+          src="../assets/logo.png"
+        />
       </div>
       <!--Right Col-->
       <div
@@ -42,7 +46,7 @@ import TransitionTop from "../components/TransitionTop.vue";
 export default {
   name: "Home",
   components: {
-    TransitionTop
-  }
+    TransitionTop,
+  },
 };
 </script>
