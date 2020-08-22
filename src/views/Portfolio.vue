@@ -19,7 +19,7 @@
         </h1>
         <div class="flex flex-wrap mb-4 leading-normal text-xl md:text-3xl">
           <div class="w-full md:w-1/3 md:h-12" v-for="item in items">
-            <ProfileItem :item="item" />
+            <ProfileItem :item="item" :hideAlt="true" />
           </div>
         </div>
         <span class="md:text-sm italic"
