@@ -16,22 +16,9 @@
           case, definitely free!). If you would like to chat, drop me a line! Or
           if you prefer, you can reach me via email or Twitter.
         </p>
-        <ul class="list-unstyled">
-          <li>
-            <a
-              href="mailto:mike.wright@itsallwater.net"
-              alt="Email mikewright@itsallwater.net"
-              ><i class="fab fa-google pr-2"></i>mike.wright@itsallwater.net</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/MikeMcMikaelson"
-              target="_blank"
-              rel="noopener"
-              alt="Twitter @MikeMcMikaelson"
-              ><i class="fab fa-twitter pr-2"></i>@MikeMcMikaelson</a
-            >
+        <ul>
+          <li v-for="item in items">
+            <IconLink :item="item" :hideAlt="false" />
           </li>
         </ul>
       </div>
@@ -92,12 +79,30 @@
 </template>
 
 <script>
+import IconLink from "../components/IconLink.vue";
 import TransitionTop from "../components/TransitionTop.vue";
 
 export default {
   name: "Home",
   components: {
-    TransitionTop
-  }
+    IconLink,
+    TransitionTop,
+  },
+  data() {
+    return {
+      items: [
+        {
+          url: "mailto:mike.wright@itsallwater.net",
+          icon: "i ic:baseline-email",
+          alt: "mikewright@itsallwater.net",
+        },
+        {
+          url: "https://twitter.com/MikeMcMikaelson",
+          icon: "i simple-icons:twitter",
+          alt: "@MikeMcMikaelson",
+        },
+      ],
+    };
+  },
 };
 </script>
