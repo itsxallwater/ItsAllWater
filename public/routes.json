@@ -1,28 +1,8 @@
 {
   "routes": [
     {
-      "route": "/about",
-      "serve": "/about",
-      "statusCode": 200
-    },
-    {
-      "route": "/contact",
-      "serve": "/contact",
-      "statusCode": 200
-    },
-    {
-      "route": "/portfolio",
-      "serve": "/portfolio",
-      "statusCode": 200
-    },
-    {
-      "route": "/privacy",
-      "serve": "/privacy",
-      "statusCode": 200
-    },
-    {
       "route": "/*",
-      "serve": "/",
+      "serve": "/index.html",
       "statusCode": 200
     }
   ]
