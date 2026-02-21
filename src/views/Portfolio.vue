@@ -53,11 +53,6 @@ export default {
       items: [
         { url: "./resume.pdf", icon: "i icomoon-free:profile", alt: "Resume" },
         {
-          url: "https://www.donovanvsdevin.com",
-          icon: "i mdi:basketball-hoop-outline",
-          alt: "Donovan vs. Devin",
-        },
-        {
           url: "https://www.linkedin.com/in/michaelscottwright/",
           icon: "i simple-icons:linkedin",
           alt: "LinkedIn",
