@@ -1,10 +1,11 @@
 <template>
   <footer class="hero-gradient text-white">
-    <!-- Wave top -->
-    <div style="line-height: 0; overflow: hidden;">
-      <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" class="block w-full" style="transform: rotate(180deg);">
-        <path fill="white" fill-opacity="0.4" d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,35 1440,32 L1440,60 L0,60 Z" />
-        <path fill="white" d="M0,48 C480,16 960,60 1440,32 L1440,60 L0,60 Z" />
+    <!-- Wave: white bg matches content above, dark navy fill sweeps into footer -->
+    <div class="bg-white" style="line-height: 0; overflow: hidden;">
+      <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" class="block w-full">
+        <path fill="#0a1628" fill-opacity="0.12" d="M0,40 C240,100 480,10 720,55 C960,100 1200,20 1440,65 L1440,120 L0,120 Z"/>
+        <path fill="#0a1628" fill-opacity="0.35" d="M0,68 C360,28 720,100 1080,58 C1260,38 1380,72 1440,78 L1440,120 L0,120 Z"/>
+        <path fill="#0a1628" d="M0,92 C480,52 960,112 1440,78 L1440,120 L0,120 Z"/>
       </svg>
     </div>
 
