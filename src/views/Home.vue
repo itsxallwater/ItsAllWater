@@ -8,8 +8,8 @@
           <div class="w-full lg:w-1/2 flex justify-center">
             <img
               alt="It's All Water, LLC"
-              class="w-56 lg:w-80 drop-shadow-2xl"
-              src="../assets/logo.png"
+              class="w-48 lg:w-72 drop-shadow-2xl"
+              src="../assets/logo-bare.png"
             />
           </div>
           <!-- Text -->

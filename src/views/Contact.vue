@@ -37,7 +37,7 @@
               href="mailto:mike.wright@itsallwater.net"
               class="flex items-center gap-3 bg-blue-50 hover:bg-brand-cyan hover:text-white text-brand-navy border border-blue-100 hover:border-brand-cyan px-5 py-4 rounded-xl font-semibold transition-all group"
             >
-              <i class="i ic:baseline-email text-2xl text-brand-cyan group-hover:text-white"></i>
+              <svg class="w-6 h-6 fill-current text-brand-cyan group-hover:text-white shrink-0" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
               <span>mike.wright@itsallwater.net</span>
             </a>
           </div>

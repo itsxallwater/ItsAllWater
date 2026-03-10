@@ -47,15 +47,12 @@
           <div class="flex flex-wrap gap-3 mb-2">
             <a
               v-for="item in currentItems"
-              :key="item.alt"
+              :key="item.label"
               :href="item.url"
               target="_blank"
               rel="noopener"
-              class="flex items-center gap-2 bg-blue-50 hover:bg-brand-cyan hover:text-white text-brand-navy border border-blue-100 hover:border-brand-cyan px-4 py-2 rounded-full text-sm font-semibold transition-all"
-            >
-              <i :class="item.icon"></i>
-              <span>{{ item.alt }}</span>
-            </a>
+              class="bg-blue-50 hover:bg-brand-cyan hover:text-white text-brand-navy border border-blue-100 hover:border-brand-cyan px-4 py-2 rounded-full text-sm font-semibold transition-all"
+            >{{ item.label }}</a>
           </div>
         </div>
 
@@ -72,15 +69,12 @@
           <div class="flex flex-wrap gap-3 mb-6">
             <a
               v-for="item in historyItems"
-              :key="item.alt"
+              :key="item.label"
               :href="item.url"
               target="_blank"
               rel="noopener"
-              class="flex items-center gap-2 bg-gray-50 hover:bg-gray-200 text-gray-700 border border-gray-200 px-4 py-2 rounded-full text-sm font-semibold transition-all"
-            >
-              <i :class="item.icon"></i>
-              <span>{{ item.alt }}</span>
-            </a>
+              class="bg-gray-50 hover:bg-gray-200 text-gray-700 border border-gray-200 px-4 py-2 rounded-full text-sm font-semibold transition-all"
+            >{{ item.label }}</a>
           </div>
 
           <p class="text-gray-600 leading-relaxed">
@@ -98,9 +92,6 @@
           </p>
         </div>
 
-        <p class="text-xs text-gray-400 italic">
-          Icons courtesy of <a href="https://icones.netlify.app/" target="_blank" rel="noopener" class="hover:underline">Icones</a>.
-        </p>
       </div>
     </section>
   </div>
@@ -112,32 +103,30 @@ export default {
   data() {
     return {
       currentItems: [
-        { url: "https://vuejs.org/", icon: "i cib:vue-js", alt: "Vue.js" },
-        { url: "https://www.javascript.com/", icon: "i simple-icons:javascript", alt: "JavaScript" },
-        { url: "https://www.typescriptlang.org/", icon: "i simple-icons:typescript", alt: "TypeScript" },
-        { url: "https://www.pickmultivalue.com/", icon: "i bx:bx-code-block", alt: "PickBASIC" },
-        { url: "https://www.jbase.com/", icon: "i si-glyph:database", alt: "jBASE" },
-        { url: "https://www.openqm.com/", icon: "i si-glyph:database", alt: "OpenQM" },
-        { url: "https://www.rocketsoftware.com/products/rocket-d3", icon: "i si-glyph:database", alt: "D3" },
-        { url: "https://www.rocketsoftware.com/products/rocket-universe-0", icon: "i si-glyph:database", alt: "UniVerse" },
-        { url: "https://docs.microsoft.com/en-us/dotnet/core/", icon: "i simple-icons:dot-net", alt: "ASP.NET Core" },
-        { url: "https://docs.microsoft.com/en-us/dotnet/csharp/", icon: "i mdi:language-csharp", alt: "C#" },
-        { url: "https://www.java.com/en/", icon: "i simple-icons:java", alt: "Java" },
-        { url: "https://azure.microsoft.com/en-us/", icon: "i simple-icons:microsoftazure", alt: "Azure" },
-        { url: "https://azure.microsoft.com/en-us/services/functions/", icon: "i simple-icons:azurefunctions", alt: "Azure Functions" },
-        { url: "https://www.docker.com", icon: "i simple-icons:docker", alt: "Docker" },
-        { url: "https://www.mongodb.com/", icon: "i simple-icons:mongodb", alt: "MongoDB" },
-        { url: "https://git-scm.com/", icon: "i simple-icons:git", alt: "Git" },
-        { url: "https://code.visualstudio.com/", icon: "i simple-icons:visualstudiocode", alt: "VS Code" },
+        { url: "https://vuejs.org/", label: "Vue.js" },
+        { url: "https://vuepress.vuejs.org/", label: "VuePress" },
+        { url: "https://www.typescriptlang.org/", label: "TypeScript" },
+        { url: "https://www.javascript.com/", label: "JavaScript" },
+        { url: "https://developer.mozilla.org/en-US/docs/Web/CSS", label: "CSS" },
+        { url: "https://www.pickmultivalue.com/", label: "PickBASIC" },
+        { url: "https://www.jbase.com/", label: "jBASE" },
+        { url: "https://www.openqm.com/", label: "OpenQM" },
+        { url: "https://www.rocketsoftware.com/products/rocket-d3", label: "D3" },
+        { url: "https://www.rocketsoftware.com/products/rocket-universe-0", label: "UniVerse" },
+        { url: "https://docs.microsoft.com/en-us/dotnet/core/", label: "ASP.NET Core" },
+        { url: "https://docs.microsoft.com/en-us/dotnet/csharp/", label: "C#" },
+        { url: "https://azure.microsoft.com/en-us/", label: "Azure" },
+        { url: "https://git-scm.com/", label: "Git" },
+        { url: "https://code.visualstudio.com/", label: "VS Code" },
       ],
       historyItems: [
-        { url: "https://www.pickmultivalue.com/", icon: "i bx:bx-code-block", alt: "PickBASIC" },
-        { url: "https://www.rocketsoftware.com/products/rocket-d3", icon: "i si-glyph:database", alt: "D3" },
-        { url: "https://www.adobe.com/products/coldfusion-family.html", icon: "i bx:bx-code-block", alt: "ColdFusion" },
-        { url: "https://www.microsoft.com/en-us/sql-server", icon: "i carbon:sql", alt: "Microsoft SQL" },
-        { url: "https://dotnet.microsoft.com/apps/aspnet/web-forms", icon: "i simple-icons:dot-net", alt: "ASP.NET WebForms" },
-        { url: "https://docs.microsoft.com/en-us/dotnet/csharp/", icon: "i mdi:language-csharp", alt: "C#" },
-        { url: "https://azure.microsoft.com/en-us/", icon: "i simple-icons:microsoftazure", alt: "Azure" },
+        { url: "https://www.pickmultivalue.com/", label: "PickBASIC" },
+        { url: "https://www.rocketsoftware.com/products/rocket-d3", label: "D3" },
+        { url: "https://www.adobe.com/products/coldfusion-family.html", label: "ColdFusion" },
+        { url: "https://www.microsoft.com/en-us/sql-server", label: "Microsoft SQL" },
+        { url: "https://dotnet.microsoft.com/apps/aspnet/web-forms", label: "ASP.NET WebForms" },
+        { url: "https://docs.microsoft.com/en-us/dotnet/csharp/", label: "C#" },
+        { url: "https://azure.microsoft.com/en-us/", label: "Azure" },
       ],
     };
   },
