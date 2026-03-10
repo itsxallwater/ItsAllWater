@@ -1,108 +1,102 @@
 <template>
-  <div class="lg:mt-24">
-    <!--Hero-->
-    <div
-      class="container px-3 mb-12 lg:mb-48 mx-auto flex flex-wrap flex-col md:flex-row items-center"
-    >
-      <!--Left Col-->
-      <div class="w-full md:w-3/5 py-6">
-        <h1 class="my-4 text-5xl font-bold leading-tight">
-          Let's Talk
-        </h1>
-        <p class="leading-normal text-xl mb-8">
-          In general, I live my life guided by two major principles. The first?
-          No one is responsible for your happiness more than you. The second?
-          Conversations are free (okay, <i>mostly</i> free&mdash;but in this
-          case, definitely free!). If you would like to chat, drop me a line! Or
-          if you prefer, you can reach me via email or Twitter.
+  <div>
+    <!-- Page header -->
+    <section class="page-header-gradient relative pt-20">
+      <div class="container mx-auto px-6 py-16 text-white text-center">
+        <p class="text-brand-light uppercase tracking-widest text-sm font-semibold mb-3">
+          Get in Touch
         </p>
-        <ul>
-          <li v-for="item in items">
-            <IconLink :item="item" :hideAlt="false" />
-          </li>
-        </ul>
+        <h1 class="text-4xl lg:text-5xl font-black mb-4">Let's Talk</h1>
+        <p class="text-blue-100 text-lg max-w-xl mx-auto">
+          Conversations are free. Drop me a line.
+        </p>
       </div>
-      <!--Right Col-->
-      <div
-        class="flex flex-col w-full md:w-2/5 justify-center items-start text-left"
-      >
-        <form
-          action="https://formspree.io/mike.wright@itsallwater.net"
-          method="POST"
-          class="w-full max-w-lg container px-3 mx-auto"
-        >
-          <input type="text" name="_gotcha" style="display: none;" />
-          <div class="mb-6">
-            <label
-              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-email-address"
-            >
-              Email Address
-            </label>
-            <input
-              class="appearance-none block w-full bg-gray-200 border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-              id="grid-email-address"
-              type="text"
-              placeholder="your@email.com"
-            />
-            <p class="text-xs italic">
-              We'll never share your email with anyone!
+      <!-- Wave -->
+      <div class="page-wave">
+        <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" class="block w-full h-12 lg:h-16">
+          <path fill="white" fill-opacity="0.4" d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,35 1440,32 L1440,60 L0,60 Z" />
+          <path fill="white" d="M0,48 C480,16 960,60 1440,32 L1440,60 L0,60 Z" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="bg-white py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto flex flex-col lg:flex-row gap-12">
+
+          <!-- Left: intro + email -->
+          <div class="w-full lg:w-2/5">
+            <h2 class="text-2xl font-bold text-gray-900 mb-1">Say Hi</h2>
+            <div class="w-12 h-1 bg-brand-cyan rounded mb-5"></div>
+            <p class="text-gray-600 leading-relaxed mb-8">
+              I live my life by two principles: no one is responsible for your happiness more than you, and conversations are free. If you'd like to chat about a project, an idea, or anything else — use the form or reach me directly.
             </p>
-          </div>
-          <div class="mb-6">
-            <label
-              class="block uppercase tracking-wide text-xs font-bold mb-2"
-              for="grid-message"
+
+            <a
+              href="mailto:mike.wright@itsallwater.net"
+              class="flex items-center gap-3 bg-blue-50 hover:bg-brand-cyan hover:text-white text-brand-navy border border-blue-100 hover:border-brand-cyan px-5 py-4 rounded-xl font-semibold transition-all group"
             >
-              Message
-            </label>
-            <textarea
-              class="appearance-none block w-full bg-gray-200 border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="grid-message"
-              placeholder="Hi Mike! Let's chat."
-              rows="3"
-            />
+              <i class="i ic:baseline-email text-2xl text-brand-cyan group-hover:text-white"></i>
+              <span>mike.wright@itsallwater.net</span>
+            </a>
           </div>
-          <div class="mb-6">
-            <button
-              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              type="button"
+
+          <!-- Right: form -->
+          <div class="w-full lg:w-3/5">
+            <h2 class="text-2xl font-bold text-gray-900 mb-1">Send a Message</h2>
+            <div class="w-12 h-1 bg-brand-cyan rounded mb-5"></div>
+            <form
+              action="https://formspree.io/mike.wright@itsallwater.net"
+              method="POST"
+              class="space-y-5"
             >
-              Say hi!
-            </button>
+              <input type="text" name="_gotcha" style="display: none;" />
+
+              <div>
+                <label
+                  class="block text-sm font-bold text-gray-700 uppercase tracking-wide mb-2"
+                  for="contact-email"
+                >Email Address</label>
+                <input
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  placeholder="your@email.com"
+                  class="w-full border border-gray-200 rounded-xl px-4 py-3 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-cyan focus:border-transparent transition"
+                />
+                <p class="text-xs text-gray-400 mt-1.5">Your email will never be shared.</p>
+              </div>
+
+              <div>
+                <label
+                  class="block text-sm font-bold text-gray-700 uppercase tracking-wide mb-2"
+                  for="contact-message"
+                >Message</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  placeholder="Hi Mike! Let's chat."
+                  rows="5"
+                  class="w-full border border-gray-200 rounded-xl px-4 py-3 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-cyan focus:border-transparent transition resize-none"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="btn-gradient text-white font-bold px-8 py-3 rounded-full shadow-md text-base"
+              >Send it ✈</button>
+            </form>
           </div>
-        </form>
+
+        </div>
       </div>
-    </div>
-    <TransitionTop />
+    </section>
   </div>
 </template>
 
 <script>
-import IconLink from "../components/IconLink.vue";
-import TransitionTop from "../components/TransitionTop.vue";
-
 export default {
-  name: "Home",
-  components: {
-    IconLink,
-    TransitionTop,
-  },
-  data() {
-    return {
-      items: [
-        {
-          url: "mailto:mike.wright@itsallwater.net",
-          icon: "i ic:baseline-email",
-          alt: "mikewright@itsallwater.net",
-        },
-        {
-          url: "https://twitter.com/MikeMcMikaelson",
-          icon: "i simple-icons:twitter",
-          alt: "@MikeMcMikaelson",
-        },
-      ],
-    };
-  },
+  name: "Contact",
 };
 </script>
