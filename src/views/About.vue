@@ -13,9 +13,10 @@
       </div>
       <!-- Wave -->
       <div class="page-wave">
-        <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" class="block w-full h-12 lg:h-16">
-          <path fill="white" fill-opacity="0.4" d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,35 1440,32 L1440,60 L0,60 Z" />
-          <path fill="white" d="M0,48 C480,16 960,60 1440,32 L1440,60 L0,60 Z" />
+        <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" class="block w-full">
+          <path fill="white" fill-opacity="0.12" d="M0,40 C240,100 480,10 720,55 C960,100 1200,20 1440,65 L1440,120 L0,120 Z"/>
+          <path fill="white" fill-opacity="0.35" d="M0,68 C360,28 720,100 1080,58 C1260,38 1380,72 1440,78 L1440,120 L0,120 Z"/>
+          <path fill="white" d="M0,92 C480,52 960,112 1440,78 L1440,120 L0,120 Z"/>
         </svg>
       </div>
     </section>
@@ -26,7 +27,7 @@
 
         <!-- Intro -->
         <p class="text-gray-600 text-lg leading-relaxed mb-10">
-          Hello! I'm <strong class="text-gray-900">Mike Wright</strong> and this is It's All Water, LLC — my one-person freelance software development and IT consulting practice, based out of Phoenix, AZ.
+          Hello! I'm <strong class="text-gray-900">Mike Wright</strong> and this is It's All Water, LLC — my one-person freelance software development, AI consulting, and IT practice, based out of Phoenix, AZ.
         </p>
 
         <!-- Currently -->
@@ -40,7 +41,7 @@
             <strong class="text-gray-900">Chief Technology Officer</strong>.
             My work spans product strategy, engineering leadership, internal development, and infrastructure. I'm also a passionate open source contributor — most notably as a maintainer of the
             <a href="https://github.com/mvextensions/mvbasic" target="_blank" rel="noopener" class="text-brand-cyan font-semibold hover:underline">MV Basic VS Code extension</a>,
-            which brings modern tooling to the MultiValue/PickBASIC ecosystem. Every now and then I take on contract development work across a variety of domains and stacks.
+            which brings modern tooling to the MultiValue/PickBASIC ecosystem. Every now and then I take on contract development work across a variety of domains and stacks — increasingly including AI integration, LLM-powered tooling, and agent-based workflows.
           </p>
 
           <h3 class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-4">Current Tech Stack</h3>
@@ -118,6 +119,8 @@ export default {
         { url: "https://azure.microsoft.com/en-us/", label: "Azure" },
         { url: "https://git-scm.com/", label: "Git" },
         { url: "https://code.visualstudio.com/", label: "VS Code" },
+        { url: "https://www.anthropic.com/", label: "Claude API" },
+        { url: "https://azure.microsoft.com/en-us/products/ai-services/", label: "Azure AI" },
       ],
       historyItems: [
         { url: "https://www.pickmultivalue.com/", label: "PickBASIC" },

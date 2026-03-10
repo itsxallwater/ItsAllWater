@@ -15,15 +15,15 @@
           <!-- Text -->
           <div class="w-full lg:w-1/2 text-white text-center lg:text-left">
             <p class="text-brand-light uppercase tracking-widest text-sm font-semibold mb-4">
-              Software Development &amp; IT Consulting
+              Software Development · AI Consulting · IT Solutions
             </p>
             <h1 class="text-5xl lg:text-6xl font-black leading-tight mb-6">
               Hi, I'm<br />
               <span class="text-gradient">Mike Wright</span>
             </h1>
             <p class="text-xl text-blue-100 mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0">
-              CTO. Freelance developer. Open source contributor.<br class="hidden lg:block" />
-              Based in Phoenix, AZ.
+              CTO. Freelance developer. AI solutions architect.<br class="hidden lg:block" />
+              Open source contributor. Based in Phoenix, AZ.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <router-link
@@ -41,9 +41,10 @@
 
       <!-- Wave transition to white -->
       <div class="page-wave">
-        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" class="block w-full h-16 lg:h-20">
-          <path fill="white" fill-opacity="0.4" d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,45 L1440,80 L0,80 Z" />
-          <path fill="white" d="M0,64 C480,20 960,80 1440,40 L1440,80 L0,80 Z" />
+        <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" class="block w-full">
+          <path fill="white" fill-opacity="0.12" d="M0,40 C240,100 480,10 720,55 C960,100 1200,20 1440,65 L1440,120 L0,120 Z"/>
+          <path fill="white" fill-opacity="0.35" d="M0,68 C360,28 720,100 1080,58 C1260,38 1380,72 1440,78 L1440,120 L0,120 Z"/>
+          <path fill="white" d="M0,92 C480,52 960,112 1440,78 L1440,120 L0,120 Z"/>
         </svg>
       </div>
     </section>
