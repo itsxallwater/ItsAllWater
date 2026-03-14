@@ -22,8 +22,10 @@
               <span class="text-gradient">Mike Wright</span>
             </h1>
             <p class="text-xl text-blue-100 mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0">
-              CTO. Freelance developer. AI solutions architect.<br class="hidden lg:block" />
-              Open source contributor. Based in Phoenix, AZ.
+              <span class="text-white font-semibold">Engineering leader.</span>
+              <span class="text-brand-light font-semibold"> AI solutions architect.</span>
+              Open source contributor and freelance developer.<br class="hidden lg:block" />
+              Hands-on, pragmatic, and always building — from Phoenix, AZ.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <router-link

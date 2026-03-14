@@ -35,26 +35,60 @@
         <div class="mb-12">
           <h2 class="text-2xl font-bold text-gray-900 mb-1">Currently</h2>
           <div class="w-12 h-1 bg-brand-cyan rounded mb-5"></div>
-          <p class="text-gray-600 leading-relaxed mb-6">
-            I've been at
+          <p class="text-gray-600 leading-relaxed mb-5">
+            I joined
             <a href="https://www.zumasys.com" target="_blank" rel="noopener" class="text-brand-cyan font-semibold hover:underline">Zumasys</a>
-            since late 2018, where I now serve as
+            in late 2018, where I now serve as
             <strong class="text-gray-900">Chief Technology Officer</strong>.
-            My work spans product strategy, engineering leadership, internal development, and infrastructure. I'm also a passionate open source contributor — most notably as a maintainer of the
-            <a href="https://github.com/mvextensions/mvbasic" target="_blank" rel="noopener" class="text-brand-cyan font-semibold hover:underline">MV Basic VS Code extension</a>,
-            which brings modern tooling to the MultiValue/PickBASIC ecosystem. Every now and then I take on contract development work across a variety of domains and stacks — increasingly including AI integration, LLM-powered tooling, and agent-based workflows.
+            The work has gone through two distinct chapters — and both have been genuinely defining.
           </p>
 
-          <h3 class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-4">Current Tech Stack</h3>
-          <div class="flex flex-wrap gap-3 mb-2">
-            <a
-              v-for="item in currentItems"
-              :key="item.label"
-              :href="item.url"
-              target="_blank"
-              rel="noopener"
-              class="bg-blue-50 hover:bg-brand-cyan hover:text-white text-brand-navy border border-blue-100 hover:border-brand-cyan px-4 py-2 rounded-full text-sm font-semibold transition-all"
-            >{{ item.label }}</a>
+          <div class="border-l-2 border-blue-100 pl-5 space-y-5 mb-6">
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-brand-cyan mb-1">2018 – 2021</p>
+              <p class="text-gray-600 leading-relaxed">
+                The early years centered on modernizing the MultiValue ecosystem — specifically
+                <strong class="text-gray-800">OpenQM</strong>, <strong class="text-gray-800">jBASE</strong>,
+                <strong class="text-gray-800">MVConnect</strong>, and <strong class="text-gray-800">AccuTerm</strong>.
+                That work culminated in the sale of those product lines to
+                <a href="https://www.rocketsoftware.com" target="_blank" rel="noopener" class="text-brand-cyan font-semibold hover:underline">Rocket Software</a>
+                in 2021 — a meaningful milestone for the MV community and for the team.
+              </p>
+            </div>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-brand-cyan mb-1">2021 – Present</p>
+              <p class="text-gray-600 leading-relaxed">
+                Since the pivot, we've focused entirely on
+                <a href="https://www.zumasys.com/rover/" target="_blank" rel="noopener" class="text-brand-cyan font-semibold hover:underline">Rover ERP</a>
+                — a manufacturing-focused platform with 30+ years of history. Over the past five years, Rover has transformed from a legacy system into a modern, cloud-ready web application compatible with multiple ERP back ends. In the last two years the team has gone all-in on an
+                <strong class="text-gray-800">AI-first development model</strong>, which culminated recently in the launch of
+                <strong class="text-gray-800">Rover AI</strong>. Day-to-day, we're heavy users of
+                <strong class="text-gray-800">GitHub Copilot</strong> across the engineering org.
+              </p>
+            </div>
+          </div>
+
+          <p class="text-gray-600 leading-relaxed mb-8">
+            I'm also a passionate open source contributor — most notably as a maintainer of the
+            <a href="https://github.com/mvextensions/mvbasic" target="_blank" rel="noopener" class="text-brand-cyan font-semibold hover:underline">MV Basic VS Code extension</a>,
+            which brings modern tooling to the PickBASIC ecosystem. Every now and then I take on contract work, increasingly focused on AI integration, LLM-powered tooling, and agent-based workflows.
+          </p>
+
+          <h3 class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-5">Current Tech Stack</h3>
+          <div class="space-y-4">
+            <div v-for="group in currentItemsByCategory" :key="group.category">
+              <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">{{ group.category }}</p>
+              <div class="flex flex-wrap gap-2">
+                <a
+                  v-for="item in group.items"
+                  :key="item.label"
+                  :href="item.url"
+                  target="_blank"
+                  rel="noopener"
+                  class="bg-blue-50 hover:bg-brand-cyan hover:text-white text-brand-navy border border-blue-100 hover:border-brand-cyan px-4 py-1.5 rounded-full text-sm font-semibold transition-all"
+                >{{ item.label }}</a>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -68,14 +102,14 @@
             a timeshare servicing company in Scottsdale. I started as a Programmer/Analyst Intern and left as Vice President of IT. That journey shaped a lot of who I am as a technologist. Along the way I gained deep experience with PCI DSS Level 1 compliance, HIPAA, and SSAE-18 audits — and worked across a range of stacks:
           </p>
 
-          <div class="flex flex-wrap gap-3 mb-6">
+          <div class="flex flex-wrap gap-2 mb-6">
             <a
               v-for="item in historyItems"
               :key="item.label"
               :href="item.url"
               target="_blank"
               rel="noopener"
-              class="bg-gray-50 hover:bg-gray-200 text-gray-700 border border-gray-200 px-4 py-2 rounded-full text-sm font-semibold transition-all"
+              class="bg-gray-50 hover:bg-gray-100 text-gray-600 border border-gray-200 hover:border-gray-300 px-4 py-1.5 rounded-full text-sm font-semibold transition-all"
             >{{ item.label }}</a>
           </div>
 
@@ -88,8 +122,11 @@
         <div class="mb-8">
           <h2 class="text-2xl font-bold text-gray-900 mb-1">Outside of Work</h2>
           <div class="w-12 h-1 bg-brand-cyan rounded mb-5"></div>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            I'm a husband and father, a huge sports fan (Phoenix teams + Arizona State), a runner, a cyclist, and a regular at the Phoenix food and brewery scene. When I'm not at a game or out on a ride, you'll almost certainly find me at a keyboard.
+          </p>
           <p class="text-gray-600 leading-relaxed">
-            I'm a husband and father, a huge sports fan (Phoenix teams + Arizona State), a runner, a cyclist, and a regular at the Phoenix food and brewery scene. When I'm not at a game or out on a ride, you'll probably find me with a keyboard in front of me. You can read more at my blog,
+            Side projects have become a playground for things I don't always get to touch at work: building UIs in <strong class="text-gray-800">Vue.js</strong>, writing backends in <strong class="text-gray-800">Go</strong>, containerizing everything in <strong class="text-gray-800">Docker</strong>, and using <strong class="text-gray-800">Claude</strong> as a genuine thinking and building partner. You can read more about all of it at my blog,
             <a href="https://www.mwright.dev/" target="_blank" rel="noopener" class="text-brand-cyan font-semibold hover:underline">mwright.dev</a>.
           </p>
         </div>
@@ -104,24 +141,45 @@ export default {
   name: "About",
   data() {
     return {
-      currentItems: [
-        { url: "https://vuejs.org/", label: "Vue.js" },
-        { url: "https://vuepress.vuejs.org/", label: "VuePress" },
-        { url: "https://www.typescriptlang.org/", label: "TypeScript" },
-        { url: "https://www.javascript.com/", label: "JavaScript" },
-        { url: "https://developer.mozilla.org/en-US/docs/Web/CSS", label: "CSS" },
-        { url: "https://www.pickmultivalue.com/", label: "PickBASIC" },
-        { url: "https://www.jbase.com/", label: "jBASE" },
-        { url: "https://www.openqm.com/", label: "OpenQM" },
-        { url: "https://www.rocketsoftware.com/products/rocket-d3", label: "D3" },
-        { url: "https://www.rocketsoftware.com/products/rocket-universe-0", label: "UniVerse" },
-        { url: "https://docs.microsoft.com/en-us/dotnet/core/", label: "ASP.NET Core" },
-        { url: "https://docs.microsoft.com/en-us/dotnet/csharp/", label: "C#" },
-        { url: "https://azure.microsoft.com/en-us/", label: "Azure" },
-        { url: "https://git-scm.com/", label: "Git" },
-        { url: "https://code.visualstudio.com/", label: "VS Code" },
-        { url: "https://www.anthropic.com/", label: "Claude API" },
-        { url: "https://azure.microsoft.com/en-us/products/ai-services/", label: "Azure AI" },
+      currentItemsByCategory: [
+        {
+          category: "AI & Tooling",
+          items: [
+            { url: "https://github.com/features/copilot", label: "GitHub Copilot" },
+            { url: "https://www.anthropic.com/", label: "Claude API" },
+            { url: "https://azure.microsoft.com/en-us/products/ai-services/", label: "Azure AI" },
+          ],
+        },
+        {
+          category: "Frontend",
+          items: [
+            { url: "https://vuejs.org/", label: "Vue.js" },
+            { url: "https://vuepress.vuejs.org/", label: "VuePress" },
+            { url: "https://www.typescriptlang.org/", label: "TypeScript" },
+            { url: "https://www.javascript.com/", label: "JavaScript" },
+            { url: "https://developer.mozilla.org/en-US/docs/Web/CSS", label: "CSS" },
+          ],
+        },
+        {
+          category: "Backend & Platform",
+          items: [
+            { url: "https://docs.microsoft.com/en-us/dotnet/core/", label: "ASP.NET Core" },
+            { url: "https://docs.microsoft.com/en-us/dotnet/csharp/", label: "C#" },
+            { url: "https://www.pickmultivalue.com/", label: "PickBASIC" },
+            { url: "https://www.jbase.com/", label: "jBASE" },
+            { url: "https://www.openqm.com/", label: "OpenQM" },
+            { url: "https://www.rocketsoftware.com/products/rocket-d3", label: "D3" },
+            { url: "https://www.rocketsoftware.com/products/rocket-universe-0", label: "UniVerse" },
+          ],
+        },
+        {
+          category: "Infrastructure",
+          items: [
+            { url: "https://azure.microsoft.com/en-us/", label: "Azure" },
+            { url: "https://git-scm.com/", label: "Git" },
+            { url: "https://code.visualstudio.com/", label: "VS Code" },
+          ],
+        },
       ],
       historyItems: [
         { url: "https://www.pickmultivalue.com/", label: "PickBASIC" },
