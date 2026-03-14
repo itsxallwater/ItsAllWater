@@ -1,264 +1,216 @@
 <template>
   <div>
-    <!--Hero-->
-    <div
-      class="container px-3 mb-16 mx-auto flex flex-wrap flex-col md:flex-row items-center"
-    >
-      <!--Left Col-->
-      <div class="w-full md:w-3/5 items-center">
-        <img
-          alt="It's All Water, LLC logo"
-          class="lg:w-4/5 w-3/5 m-auto z-50"
-          src="../assets/logo.png"
-        />
-      </div>
-      <!--Right Col-->
-      <div
-        class="flex flex-col w-full md:w-2/5 justify-center items-start text-left"
-      >
-        <h1
-          class="my-4 text-4xl lg:text-5xl font-bold leading-tight w-full lg:w-auto"
-        >
-          My Story
-        </h1>
-        <p class="leading-normal text-2xl mb-6">
-          Hello! My name is Mike Wright and this is It's All Water, LLC. I'm a
-          one-person shop offering freelance software development and IT
-          consulting based out of Phoenix, AZ.
+    <!-- Page header -->
+    <section class="page-header-gradient relative pt-20">
+      <div class="container mx-auto px-6 py-16 text-white text-center">
+        <p class="text-brand-light uppercase tracking-widest text-sm font-semibold mb-3">
+          Background &amp; Experience
+        </p>
+        <h1 class="text-4xl lg:text-5xl font-black mb-4">My Story</h1>
+        <p class="text-blue-100 text-lg max-w-xl mx-auto">
+          One-person shop. Lots of hats. Always learning.
         </p>
       </div>
+    </section>
+
+    <!-- Top wave -->
+    <div class="bg-white" style="line-height: 0; overflow: hidden;">
+      <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" class="block w-full">
+        <path fill="#0a1628" fill-opacity="0.12" d="M0,0 C240,80 480,12 720,68 C960,95 1200,20 1440,0 L1440,0 L0,0 Z"/>
+        <path fill="#0a1628" fill-opacity="0.35" d="M0,0 C360,55 720,10 1080,52 C1260,65 1380,28 1440,0 L1440,0 L0,0 Z"/>
+        <path fill="#0a1628" d="M0,0 C240,28 480,4 720,22 C960,40 1200,6 1440,0 L1440,0 L0,0 Z"/>
+      </svg>
     </div>
-    <TransitionTop />
-    <div class="p-3 mx-auto bg-white leading-normal text-2xl">
-      <h2
-        class="font-bold my-4 text-xl lg:text-2xl leading-tight w-full lg:w-auto"
-      >
-        Currently
-      </h2>
-      <p class="mb-4 text-sm lg:text-base">
-        Professionally, I have been at
-        <a
-          href="https://www.zumasys.com"
-          target="_blank"
-          rel="noopener"
-          alt="Zumasys"
-          >Zumasys</a
-        >
-        since late 2018. While my journey there began as a Senior Software
-        Developer, by January of 2020 I stepped into the role of Director of
-        Technology. My work with Zumasys primarily consists of directing the
-        Product Support, Internal Development and Internal Helpdesk/IT groups. I
-        also co-chair Product Development and am a general open source
-        evangelist for the organization (I am super passionate about the
-        <a
-          href="https://github.com/mvextensions/mvbasic"
-          target="_blank"
-          rel="noopener"
-          alt="MV Basic"
-          >MV Basic</a
-        >
-        VS Code extension). Every now and then I'm known to help in executing on
-        contract development work for clients across a variety of domains and
-        technical stacks, including but not limited to:
-      </p>
-      <div
-        class="flex flex-wrap mb-4 leading-normal text-sm lg:text-base text-left lg:text-center"
-      >
-        <div class="w-full md:w-1/6 md:h-12" v-for="item in currentItems">
-          <IconLink :item="item" :hideAlt="false" />
+
+    <!-- Content -->
+    <section class="bg-white py-12">
+      <div class="container mx-auto px-6 max-w-4xl">
+
+        <!-- Intro -->
+        <p class="text-gray-600 text-lg leading-relaxed mb-10">
+          Hello! I'm <strong class="text-gray-900">Mike Wright</strong> and this is It's All Water, LLC — my one-person freelance software development, AI consulting, and general technology practice, based out of Phoenix, AZ.
+        </p>
+
+        <!-- Currently -->
+        <div class="mb-12">
+          <div class="inline-block mb-5">
+            <div class="flex items-center gap-3 mb-1.5">
+              <svg class="w-6 h-6 fill-current text-brand-cyan flex-shrink-0" viewBox="0 0 24 24"><path d="M10 16v-1H3.01L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-4h-7v1h-4zm10-9h-4.01V5l-2-2h-4l-2 2v2H4c-1.1 0-2 .9-2 2v3c0 1.11.89 2 2 2h6v-2h4v2h6c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-6 0h-4V5h4v2z"/></svg>
+              <h2 class="text-2xl font-bold text-gray-900">Currently</h2>
+            </div>
+            <div class="h-1 bg-brand-cyan rounded"></div>
+          </div>
+          <p class="text-gray-600 leading-relaxed mb-5">
+            I joined
+            <a href="https://www.zumasys.com" target="_blank" rel="noopener" class="text-brand-cyan font-semibold hover:underline">Zumasys</a>
+            in late 2018, where I now serve as
+            <strong class="text-gray-900">Chief Technology Officer</strong>.
+            The work has gone through two distinct chapters — and both have been genuinely defining.
+          </p>
+
+          <div class="border-l-2 border-blue-100 pl-5 space-y-5 mb-6">
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-brand-cyan mb-1">2018 – 2021</p>
+              <p class="text-gray-600 leading-relaxed">
+                The early years centered on modernizing the MultiValue ecosystem — specifically
+                <strong class="text-gray-800">OpenQM</strong>, <strong class="text-gray-800">jBASE</strong>,
+                <strong class="text-gray-800">MVConnect</strong>, and <strong class="text-gray-800">AccuTerm</strong>.
+                That work culminated in the sale of those product lines to
+                <a href="https://www.rocketsoftware.com" target="_blank" rel="noopener" class="text-brand-cyan font-semibold hover:underline">Rocket Software</a>
+                in 2021 — a meaningful milestone for the MV community and for the team.
+              </p>
+            </div>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-brand-cyan mb-1">2021 – Present</p>
+              <p class="text-gray-600 leading-relaxed">
+                Since the pivot, we've focused entirely on
+                <a href="https://www.zumasys.com/rover/" target="_blank" rel="noopener" class="text-brand-cyan font-semibold hover:underline">Rover ERP</a>
+                — a manufacturing-focused platform with 30+ years of history. Over the past five years, Rover has transformed from a legacy system into a modern, cloud-ready web application compatible with multiple ERP back ends. In the last two years the team has gone all-in on an
+                <strong class="text-gray-800">AI-first development model</strong>, which culminated recently in the launch of
+                <strong class="text-gray-800">Rover AI</strong>. Day-to-day, we're heavy users of
+                <strong class="text-gray-800">GitHub Copilot</strong> across the engineering org.
+              </p>
+            </div>
+          </div>
+
+          <p class="text-gray-600 leading-relaxed mb-8">
+            I'm also a passionate open source contributor — most notably as a maintainer of the
+            <a href="https://github.com/mvextensions/mvbasic" target="_blank" rel="noopener" class="text-brand-cyan font-semibold hover:underline">MV Basic VS Code extension</a>,
+            which brings modern tooling to the PickBASIC ecosystem. Every now and then I take on contract work, increasingly focused on AI integration, LLM-powered tooling, and agent-based workflows.
+          </p>
+
+          <h3 class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-5">Current Tech Stack</h3>
+          <div class="space-y-4">
+            <div v-for="group in currentItemsByCategory" :key="group.category">
+              <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">{{ group.category }}</p>
+              <div class="flex flex-wrap gap-2">
+                <a
+                  v-for="item in group.items"
+                  :key="item.label"
+                  :href="item.url"
+                  target="_blank"
+                  rel="noopener"
+                  class="inline-flex items-center gap-1.5 bg-blue-50 hover:bg-brand-cyan hover:text-white text-brand-navy border border-blue-100 hover:border-brand-cyan px-4 py-1.5 rounded-full text-sm font-semibold transition-all"
+                >
+                  <img v-if="item.icon" :src="item.icon" :alt="''" class="w-4 h-4 flex-shrink-0" @error="$event.target.style.display='none'" />
+                  {{ item.label }}
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <h2
-        class="font-bold my-4 text-xl lg:text-2xl leading-tight w-full lg:w-auto"
-      >
-        Past Life
-      </h2>
-      <p class="mb-4 text-sm lg:text-base">
-        Prior to joining Zumasys I spent the first thirteen years of my career
-        (re: my whole career) at
-        <a
-          href="https://www.equiant.com"
-          rel="noopener"
-          target="_blank"
-          alt="Equiant Financial Services"
-          >Equiant Financial Services</a
-        >, a timeshare servicing company based in Scottsdale. My journey there
-        began as a Programmer/Analyst Intern and ended as Vice President of IT!
-        Though I no longer work there, I'm extremely appreciative of the
-        opportunities that were provided to me. My experience there allowed me
-        to grow as a developer across several technology stacks:
-      </p>
-      <div
-        class="flex flex-wrap mb-4 leading-normal text-sm lg:text-base text-left lg:text-center"
-      >
-        <div class="w-full md:w-1/6 md:h-12" v-for="item in historyItems">
-          <IconLink :item="item" :hideAlt="false" />
+
+        <!-- Past life -->
+        <div class="mb-12">
+          <div class="inline-block mb-5">
+            <div class="flex items-center gap-3 mb-1.5">
+              <svg class="w-6 h-6 fill-current text-brand-cyan flex-shrink-0" viewBox="0 0 24 24"><path d="M13 3a9 9 0 00-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.954 8.954 0 0013 21a9 9 0 000-18zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg>
+              <h2 class="text-2xl font-bold text-gray-900">Past Life</h2>
+            </div>
+            <div class="h-1 bg-brand-cyan rounded"></div>
+          </div>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Prior to Zumasys I spent thirteen years at
+            <a href="https://www.equiant.com" target="_blank" rel="noopener" class="text-brand-cyan font-semibold hover:underline">Equiant Financial Services</a>,
+            a timeshare servicing company in Scottsdale. I started as a Programmer/Analyst Intern and left as Vice President of IT. That journey shaped a lot of who I am as a technologist. Along the way I gained deep experience with PCI DSS Level 1 compliance, HIPAA, and SSAE-18 audits — and worked across a range of stacks:
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-6">
+            <a
+              v-for="item in historyItems"
+              :key="item.label"
+              :href="item.url"
+              target="_blank"
+              rel="noopener"
+              class="inline-flex items-center gap-1.5 bg-gray-50 hover:bg-gray-100 text-gray-600 border border-gray-200 hover:border-gray-300 px-4 py-1.5 rounded-full text-sm font-semibold transition-all"
+            >
+              <img v-if="item.icon" :src="item.icon" :alt="''" class="w-4 h-4 flex-shrink-0" @error="$event.target.style.display='none'" />
+              {{ item.label }}
+            </a>
+          </div>
+
+          <p class="text-gray-600 leading-relaxed">
+            That smaller-company environment let me chart my own course, take real ownership, and grow fast. I'm extremely grateful for those opportunities.
+          </p>
         </div>
+
+        <!-- Personal -->
+        <div class="mb-8">
+          <div class="inline-block mb-5">
+            <div class="flex items-center gap-3 mb-1.5">
+              <svg class="w-6 h-6 fill-current text-brand-cyan flex-shrink-0" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <h2 class="text-2xl font-bold text-gray-900">Outside of Work</h2>
+            </div>
+            <div class="h-1 bg-brand-cyan rounded"></div>
+          </div>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            I'm a husband and father, huge sports fan, runner, cyclist, and regular on the Phoenix food and brewery scene. When I'm not at a game or out on a ride, you'll almost certainly find me behind a keyboard.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            Side projects have become a playground for things I don't always get to touch at work: building UIs in <strong class="text-gray-800">Vue.js</strong> with <strong class="text-gray-800">Vite</strong>, writing backends in <strong class="text-gray-800">Go</strong>, containerizing everything in <strong class="text-gray-800">Docker</strong>, and using <strong class="text-gray-800">Claude</strong> as a genuine thinking and building partner. You can read more about all of it at my blog,
+            <a href="https://www.mwright.dev/" target="_blank" rel="noopener" class="text-brand-cyan font-semibold hover:underline">mwright.dev</a>.
+          </p>
+        </div>
+
       </div>
-      <p class="mb-4 text-sm lg:text-base">
-        Not only did I gain valuable technology experience, I also became
-        familiar with Office 365 for Enterprise, Microsoft Azure, PCI DSS
-        Compliance (Level 1), HIPAA Compliance and SSAE-18 audits. Due to the
-        fact it was a smaller company, I was able to chart my own course and
-        take a strong sense of ownership and pride in my work.
-      </p>
-      <p class="mb-4 text-sm lg:text-base">
-        Outside of providing freelance software development and IT consulting,
-        I'm a husband to an amazing woman and father to an equally amazing son.
-        I'm also a huge sports fan, supporting all of the local professional
-        teams plus Arizona State. When I'm not hanging with the family or
-        watching games, you're likely to find me coding, running, cycling or
-        enjoying the great culinary and brewery scenes of Phoenix! If you're
-        reading this wanting more, you'll find my blog at
-        <a
-          href="https://www.mwright.dev/"
-          rel="noopener"
-          target="_blank"
-          alt="Blog"
-          >mwright.dev</a
-        >.
-      </p>
-      <span class="text-sm italic"
-        >Icons thanks to
-        <a
-          href="https://icones.netlify.app/"
-          rel="noopener"
-          target="_blank"
-          alt="Icones"
-          >Icones</a
-        >!</span
-      >
-    </div>
+    </section>
   </div>
 </template>
 
 <script>
-import TransitionTop from "../components/TransitionTop.vue";
-import IconLink from "../components/IconLink.vue";
-
 export default {
   name: "About",
-  components: {
-    TransitionTop,
-    IconLink,
-  },
   data() {
     return {
-      currentItems: [
-        { url: "https://vuejs.org/", icon: "i cib:vue-js", alt: "Vue.js" },
+      currentItemsByCategory: [
         {
-          url: "https://www.javascript.com/",
-          icon: "i simple-icons:javascript",
-          alt: "JavaScript",
+          category: "AI & Tooling",
+          items: [
+            { url: "https://github.com/features/copilot", label: "GitHub Copilot", icon: "https://cdn.simpleicons.org/githubcopilot/04b0f2" },
+            { url: "https://www.anthropic.com/", label: "Claude API", icon: "https://cdn.simpleicons.org/anthropic/04b0f2" },
+            { url: "https://azure.microsoft.com/en-us/products/ai-services/", label: "Azure AI", icon: "https://cdn.simpleicons.org/microsoftazure" },
+          ],
         },
         {
-          url: "https://www.typescriptlang.org/",
-          icon: "i simple-icons:typescript",
-          alt: "TypeScript",
+          category: "Frontend",
+          items: [
+            { url: "https://vuejs.org/", label: "Vue.js", icon: "https://cdn.simpleicons.org/vuedotjs" },
+            { url: "https://vuepress.vuejs.org/", label: "VuePress", icon: "https://cdn.simpleicons.org/vuedotjs" },
+            { url: "https://vitejs.dev/", label: "Vite", icon: "https://cdn.simpleicons.org/vite" },
+            { url: "https://www.typescriptlang.org/", label: "TypeScript", icon: "https://cdn.simpleicons.org/typescript" },
+            { url: "https://www.javascript.com/", label: "JavaScript", icon: "https://cdn.simpleicons.org/javascript" },
+            { url: "https://developer.mozilla.org/en-US/docs/Web/CSS", label: "CSS", icon: "https://cdn.simpleicons.org/css3" },
+          ],
         },
         {
-          url: "https://www.pickmultivalue.com/",
-          icon: "i bx:bx-code-block",
-          alt: "PickBASIC",
+          category: "Backend & Platform",
+          items: [
+            { url: "https://docs.microsoft.com/en-us/dotnet/core/", label: "ASP.NET Core", icon: "https://cdn.simpleicons.org/dotnet" },
+            { url: "https://docs.microsoft.com/en-us/dotnet/csharp/", label: "C#", icon: "https://cdn.simpleicons.org/csharp" },
+            { url: "https://www.pickmultivalue.com/", label: "PickBASIC" },
+            { url: "https://www.jbase.com/", label: "jBASE" },
+            { url: "https://www.openqm.com/", label: "OpenQM" },
+            { url: "https://www.rocketsoftware.com/products/rocket-d3", label: "D3" },
+            { url: "https://www.rocketsoftware.com/products/rocket-universe-0", label: "UniVerse" },
+          ],
         },
         {
-          url: "https://www.jbase.com/",
-          icon: "i si-glyph:database",
-          alt: "jBASE",
-        },
-        {
-          url: "https://www.openqm.com/",
-          icon: "i si-glyph:database",
-          alt: "OpenQM",
-        },
-        {
-          url: "https://www.rocketsoftware.com/products/rocket-d3",
-          icon: "i si-glyph:database",
-          alt: "D3",
-        },
-        {
-          url: "https://www.rocketsoftware.com/products/rocket-universe-0",
-          icon: "i si-glyph:database",
-          alt: "UniVerse",
-        },
-        {
-          url: "https://docs.microsoft.com/en-us/dotnet/core/",
-          icon: "i simple-icons:dot-net",
-          alt: "ASP.NET Core",
-        },
-        {
-          url: "https://docs.microsoft.com/en-us/dotnet/csharp/",
-          icon: "i mdi:language-csharp",
-          alt: "C#",
-        },
-        {
-          url: "https://www.java.com/en/",
-          icon: "i simple-icons:java",
-          alt: "Java",
-        },
-        {
-          url: "https://azure.microsoft.com/en-us/",
-          icon: "i simple-icons:microsoftazure",
-          alt: "Azure",
-        },
-        {
-          url: "https://azure.microsoft.com/en-us/services/functions/",
-          icon: "i simple-icons:azurefunctions",
-          alt: "Azure Functions",
-        },
-        {
-          url: "https://www.docker.com",
-          icon: "i simple-icons:docker",
-          alt: "Docker",
-        },
-        {
-          url: "https://www.mongodb.com/",
-          icon: "i simple-icons:mongodb",
-          alt: "mongoDB",
-        },
-        { url: "https://git-scm.com/", icon: "i simple-icons:git", alt: "Git" },
-        {
-          url: "https://code.visualstudio.com/",
-          icon: "i simple-icons:visualstudiocode",
-          alt: "Visual Studio Code",
+          category: "Infrastructure",
+          items: [
+            { url: "https://azure.microsoft.com/en-us/", label: "Azure", icon: "https://cdn.simpleicons.org/microsoftazure" },
+            { url: "https://git-scm.com/", label: "Git", icon: "https://cdn.simpleicons.org/git" },
+            { url: "https://code.visualstudio.com/", label: "VS Code", icon: "https://cdn.simpleicons.org/visualstudiocode" },
+          ],
         },
       ],
       historyItems: [
-        {
-          url: "https://www.pickmultivalue.com/",
-          icon: "i bx:bx-code-block",
-          alt: "PickBASIC",
-        },
-        {
-          url: "https://www.rocketsoftware.com/products/rocket-d3",
-          icon: "i si-glyph:database",
-          alt: "D3",
-        },
-        {
-          url: "https://www.adobe.com/products/coldfusion-family.html",
-          icon: "i bx:bx-code-block",
-          alt: "ColdFusion",
-        },
-        {
-          url: "https://www.microsoft.com/en-us/sql-server",
-          icon: "i carbon:sql",
-          alt: "Microsoft SQL (T-SQL, SSIS, SSRS)",
-        },
-        {
-          url: "https://dotnet.microsoft.com/apps/aspnet/web-forms",
-          icon: "i simple-icons:dot-net",
-          alt: "ASP.NET WebForms",
-        },
-        {
-          url: "https://docs.microsoft.com/en-us/dotnet/csharp/",
-          icon: "i mdi:language-csharp",
-          alt: "C#",
-        },
-        {
-          url: "https://azure.microsoft.com/en-us/",
-          icon: "i simple-icons:microsoftazure",
-          alt: "Azure",
-        },
+        { url: "https://www.pickmultivalue.com/", label: "PickBASIC" },
+        { url: "https://www.rocketsoftware.com/products/rocket-d3", label: "D3" },
+        { url: "https://www.adobe.com/products/coldfusion-family.html", label: "ColdFusion" },
+        { url: "https://www.microsoft.com/en-us/sql-server", label: "Microsoft SQL", icon: "https://cdn.simpleicons.org/microsoftsqlserver" },
+        { url: "https://dotnet.microsoft.com/apps/aspnet/web-forms", label: "ASP.NET WebForms", icon: "https://cdn.simpleicons.org/dotnet" },
+        { url: "https://docs.microsoft.com/en-us/dotnet/csharp/", label: "C#", icon: "https://cdn.simpleicons.org/csharp" },
+        { url: "https://azure.microsoft.com/en-us/", label: "Azure", icon: "https://cdn.simpleicons.org/microsoftazure" },
       ],
     };
   },
