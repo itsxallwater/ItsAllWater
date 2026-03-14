@@ -48,6 +48,15 @@
         </svg>
       </div>
     </section>
+
+    <!-- Inverted mirror of footer wave: dark rolling hills descending into white -->
+    <div class="bg-white" style="line-height: 0; overflow: hidden;">
+      <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" class="block w-full">
+        <path fill="#0a1628" fill-opacity="0.12" d="M0,80 C240,20 480,110 720,65 C960,20 1200,100 1440,55 L1440,0 L0,0 Z"/>
+        <path fill="#0a1628" fill-opacity="0.35" d="M0,52 C360,92 720,20 1080,62 C1260,82 1380,48 1440,42 L1440,0 L0,0 Z"/>
+        <path fill="#0a1628" d="M0,28 C480,68 960,8 1440,42 L1440,0 L0,0 Z"/>
+      </svg>
+    </div>
   </div>
 </template>
 
