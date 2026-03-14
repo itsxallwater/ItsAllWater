@@ -28,7 +28,7 @@
 
         <!-- Intro -->
         <p class="text-gray-600 text-lg leading-relaxed mb-10">
-          Hello! I'm <strong class="text-gray-900">Mike Wright</strong> and this is It's All Water, LLC — my one-person freelance software development, AI consulting, and IT practice, based out of Phoenix, AZ.
+          Hello! I'm <strong class="text-gray-900">Mike Wright</strong> and this is It's All Water, LLC — my one-person freelance software development, AI consulting, and general technology practice, based out of Phoenix, AZ.
         </p>
 
         <!-- Currently -->
@@ -144,7 +144,7 @@
             <div class="h-1 bg-brand-cyan rounded"></div>
           </div>
           <p class="text-gray-600 leading-relaxed mb-4">
-            I'm a husband and father, a huge sports fan (Phoenix teams + Arizona State), a runner, a cyclist, and a regular at the Phoenix food and brewery scene. When I'm not at a game or out on a ride, you'll almost certainly find me at a keyboard.
+            I'm a husband and father, huge sports fan, runner, cyclist, and regular on the Phoenix food and brewery scene. When I'm not at a game or out on a ride, you'll almost certainly find me behind a keyboard.
           </p>
           <p class="text-gray-600 leading-relaxed">
             Side projects have become a playground for things I don't always get to touch at work: building UIs in <strong class="text-gray-800">Vue.js</strong> with <strong class="text-gray-800">Vite</strong>, writing backends in <strong class="text-gray-800">Go</strong>, containerizing everything in <strong class="text-gray-800">Docker</strong>, and using <strong class="text-gray-800">Claude</strong> as a genuine thinking and building partner. You can read more about all of it at my blog,
