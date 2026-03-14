@@ -33,11 +33,13 @@
 
         <!-- Currently -->
         <div class="mb-12">
-          <div class="flex items-center gap-3 mb-1">
-            <svg class="w-6 h-6 fill-current text-brand-cyan flex-shrink-0" viewBox="0 0 24 24"><path d="M10 16v-1H3.01L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-4h-7v1h-4zm10-9h-4.01V5l-2-2h-4l-2 2v2H4c-1.1 0-2 .9-2 2v3c0 1.11.89 2 2 2h6v-2h4v2h6c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-6 0h-4V5h4v2z"/></svg>
-            <h2 class="text-2xl font-bold text-gray-900">Currently</h2>
+          <div class="inline-block mb-5">
+            <div class="flex items-center gap-3 mb-1.5">
+              <svg class="w-6 h-6 fill-current text-brand-cyan flex-shrink-0" viewBox="0 0 24 24"><path d="M10 16v-1H3.01L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-4h-7v1h-4zm10-9h-4.01V5l-2-2h-4l-2 2v2H4c-1.1 0-2 .9-2 2v3c0 1.11.89 2 2 2h6v-2h4v2h6c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-6 0h-4V5h4v2z"/></svg>
+              <h2 class="text-2xl font-bold text-gray-900">Currently</h2>
+            </div>
+            <div class="h-1 bg-brand-cyan rounded"></div>
           </div>
-          <div class="w-12 h-1 bg-brand-cyan rounded mb-5"></div>
           <p class="text-gray-600 leading-relaxed mb-5">
             I joined
             <a href="https://www.zumasys.com" target="_blank" rel="noopener" class="text-brand-cyan font-semibold hover:underline">Zumasys</a>
@@ -100,11 +102,13 @@
 
         <!-- Past life -->
         <div class="mb-12">
-          <div class="flex items-center gap-3 mb-1">
-            <svg class="w-6 h-6 fill-current text-brand-cyan flex-shrink-0" viewBox="0 0 24 24"><path d="M13 3a9 9 0 00-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.954 8.954 0 0013 21a9 9 0 000-18zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg>
-            <h2 class="text-2xl font-bold text-gray-900">Past Life</h2>
+          <div class="inline-block mb-5">
+            <div class="flex items-center gap-3 mb-1.5">
+              <svg class="w-6 h-6 fill-current text-brand-cyan flex-shrink-0" viewBox="0 0 24 24"><path d="M13 3a9 9 0 00-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.954 8.954 0 0013 21a9 9 0 000-18zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg>
+              <h2 class="text-2xl font-bold text-gray-900">Past Life</h2>
+            </div>
+            <div class="h-1 bg-brand-cyan rounded"></div>
           </div>
-          <div class="w-12 h-1 bg-brand-cyan rounded mb-5"></div>
           <p class="text-gray-600 leading-relaxed mb-4">
             Prior to Zumasys I spent thirteen years at
             <a href="https://www.equiant.com" target="_blank" rel="noopener" class="text-brand-cyan font-semibold hover:underline">Equiant Financial Services</a>,
@@ -132,16 +136,18 @@
 
         <!-- Personal -->
         <div class="mb-8">
-          <div class="flex items-center gap-3 mb-1">
-            <svg class="w-6 h-6 fill-current text-brand-cyan flex-shrink-0" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            <h2 class="text-2xl font-bold text-gray-900">Outside of Work</h2>
+          <div class="inline-block mb-5">
+            <div class="flex items-center gap-3 mb-1.5">
+              <svg class="w-6 h-6 fill-current text-brand-cyan flex-shrink-0" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <h2 class="text-2xl font-bold text-gray-900">Outside of Work</h2>
+            </div>
+            <div class="h-1 bg-brand-cyan rounded"></div>
           </div>
-          <div class="w-12 h-1 bg-brand-cyan rounded mb-5"></div>
           <p class="text-gray-600 leading-relaxed mb-4">
             I'm a husband and father, a huge sports fan (Phoenix teams + Arizona State), a runner, a cyclist, and a regular at the Phoenix food and brewery scene. When I'm not at a game or out on a ride, you'll almost certainly find me at a keyboard.
           </p>
           <p class="text-gray-600 leading-relaxed">
-            Side projects have become a playground for things I don't always get to touch at work: building UIs in <strong class="text-gray-800">Vue.js</strong>, writing backends in <strong class="text-gray-800">Go</strong>, containerizing everything in <strong class="text-gray-800">Docker</strong>, and using <strong class="text-gray-800">Claude</strong> as a genuine thinking and building partner. You can read more about all of it at my blog,
+            Side projects have become a playground for things I don't always get to touch at work: building UIs in <strong class="text-gray-800">Vue.js</strong> with <strong class="text-gray-800">Vite</strong>, writing backends in <strong class="text-gray-800">Go</strong>, containerizing everything in <strong class="text-gray-800">Docker</strong>, and using <strong class="text-gray-800">Claude</strong> as a genuine thinking and building partner. You can read more about all of it at my blog,
             <a href="https://www.mwright.dev/" target="_blank" rel="noopener" class="text-brand-cyan font-semibold hover:underline">mwright.dev</a>.
           </p>
         </div>
@@ -170,6 +176,7 @@ export default {
           items: [
             { url: "https://vuejs.org/", label: "Vue.js", icon: "https://cdn.simpleicons.org/vuedotjs" },
             { url: "https://vuepress.vuejs.org/", label: "VuePress", icon: "https://cdn.simpleicons.org/vuedotjs" },
+            { url: "https://vitejs.dev/", label: "Vite", icon: "https://cdn.simpleicons.org/vite" },
             { url: "https://www.typescriptlang.org/", label: "TypeScript", icon: "https://cdn.simpleicons.org/typescript" },
             { url: "https://www.javascript.com/", label: "JavaScript", icon: "https://cdn.simpleicons.org/javascript" },
             { url: "https://developer.mozilla.org/en-US/docs/Web/CSS", label: "CSS", icon: "https://cdn.simpleicons.org/css3" },

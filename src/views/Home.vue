@@ -43,6 +43,15 @@
 
     </section>
 
+    <!-- Top wave: dark hills descend flush from hero into white -->
+    <div class="bg-white" style="line-height: 0; overflow: hidden;">
+      <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" class="block w-full">
+        <path fill="#0a1628" fill-opacity="0.12" d="M0,0 C240,80 480,12 720,68 C960,95 1200,20 1440,0 L1440,0 L0,0 Z"/>
+        <path fill="#0a1628" fill-opacity="0.35" d="M0,0 C360,55 720,10 1080,52 C1260,65 1380,28 1440,0 L1440,0 L0,0 Z"/>
+        <path fill="#0a1628" d="M0,0 C240,28 480,4 720,22 C960,40 1200,6 1440,0 L1440,0 L0,0 Z"/>
+      </svg>
+    </div>
+
     <!-- Capabilities -->
     <section class="bg-white pt-16 pb-10">
       <div class="container mx-auto px-6">
@@ -78,15 +87,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Top wave: dark hills descend flush from hero into white -->
-    <div class="bg-white" style="line-height: 0; overflow: hidden;">
-      <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" class="block w-full">
-        <path fill="#0a1628" fill-opacity="0.12" d="M0,0 C240,80 480,12 720,68 C960,95 1200,20 1440,0 L1440,0 L0,0 Z"/>
-        <path fill="#0a1628" fill-opacity="0.35" d="M0,0 C360,55 720,10 1080,52 C1260,65 1380,28 1440,0 L1440,0 L0,0 Z"/>
-        <path fill="#0a1628" d="M0,0 C240,28 480,4 720,22 C960,40 1200,6 1440,0 L1440,0 L0,0 Z"/>
-      </svg>
-    </div>
   </div>
 </template>
 
