@@ -58,12 +58,4 @@ export default {
   box-shadow: 0 24px 48px rgba(4, 176, 242, 0.18);
 }
 
-/* Wave divider between hero and content */
-.page-wave {
-  display: block;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  background: white;
-}
 </style>

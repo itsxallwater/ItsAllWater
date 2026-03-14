@@ -11,15 +11,16 @@
           One-person shop. Lots of hats. Always learning.
         </p>
       </div>
-      <!-- Wave -->
-      <div class="page-wave">
-        <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" class="block w-full">
-          <path fill="white" fill-opacity="0.12" d="M0,40 C240,100 480,10 720,55 C960,100 1200,20 1440,65 L1440,120 L0,120 Z"/>
-          <path fill="white" fill-opacity="0.35" d="M0,68 C360,28 720,100 1080,58 C1260,38 1380,72 1440,78 L1440,120 L0,120 Z"/>
-          <path fill="white" d="M0,92 C480,52 960,112 1440,78 L1440,120 L0,120 Z"/>
-        </svg>
-      </div>
     </section>
+
+    <!-- Top wave -->
+    <div class="bg-white" style="line-height: 0; overflow: hidden;">
+      <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" class="block w-full">
+        <path fill="#0a1628" fill-opacity="0.12" d="M0,0 C240,80 480,12 720,68 C960,95 1200,20 1440,0 L1440,0 L0,0 Z"/>
+        <path fill="#0a1628" fill-opacity="0.35" d="M0,0 C360,55 720,10 1080,52 C1260,65 1380,28 1440,0 L1440,0 L0,0 Z"/>
+        <path fill="#0a1628" d="M0,0 C240,28 480,4 720,22 C960,40 1200,6 1440,0 L1440,0 L0,0 Z"/>
+      </svg>
+    </div>
 
     <!-- Content -->
     <section class="bg-white py-12">
